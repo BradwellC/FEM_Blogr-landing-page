@@ -1,0 +1,291 @@
+@use "./abstracts" as a;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: a.$width-mobile;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: a.$ff-main;
+  font-size: 28px;
+  font-weight: 300;
+
+  padding: 2rem 1rem;
+  line-height: 32px;
+
+  color: a.$dark-blue;
+}
+
+p {
+  font-family: a.$ff-main;
+  font-weight: 300;
+  font-size: 16px;
+
+  line-height: 28px;
+  letter-spacing: 1px;
+
+  color: a.$grey-blue-2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+header {
+  border-radius: 0 0 0 6rem;
+
+  background-image: linear-gradient(
+    to bottom right,
+    a.$red-grad-1 20%,
+    a.$red-grad-2 100%
+  );
+  width: a.$width-mobile;
+  height: 600px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+
+  padding: 4rem 1.5rem 2rem;
+
+  &-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-nav {
+    background-color: a.$white;
+    padding: 1.5rem;
+  }
+
+  &-item {
+    list-style: none;
+  }
+}
+
+.header {
+  text-align: center;
+  vertical-align: middle;
+
+  width: a.$width-mobile;
+  padding: 3rem 1rem;
+
+  z-index: 2;
+}
+
+.header h1 {
+  font-family: a.$ff-main;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 18px;
+  font-family: a.$ff-main;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.section-1 {
+  height: auto;
+  width: 375px;
+  padding: 5rem 1.5rem 15rem;
+
+  text-align: center;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.section-2 {
+  position: relative;
+  width: 375px;
+  height: 625px;
+
+  background-color: a.$dark-blue;
+  border-radius: 0 6rem 0 6rem;
+
+  z-index: -1;
+  margin: auto;
+
+  & h1 {
+    color: a.$white;
+    padding-top: 12rem;
+
+    text-align: center;
+
+    font-family: a.$ff-main;
+    font-size: 40px;
+    line-height: 65px;
+  }
+
+  // &_img {
+  //   position: absolute;
+  //   top: -30%;
+
+  //   width: 100%;
+  //   height: auto;
+
+  //   align-items: center;
+  // }
+
+  &_circle {
+    position: absolute;
+    top: -43%;
+
+    width: 600px;
+    height: auto;
+
+    align-items: center;
+  }
+
+  & p {
+    text-align: center;
+    padding: 0 1.5rem;
+
+    font-family: a.$ff-main;
+    font-size: 16px;
+
+    line-height: 28px;
+
+    color: a.$white;
+  }
+}
+
+.section-3 {
+  text-align: center;
+  padding: 4rem 1.5rem 7rem;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+footer {
+  height: auto;
+  width: 375;
+
+  background-color: a.$black-blue;
+  border-radius: 0 6rem 0 0;
+
+  text-align: center;
+
+  & h1 {
+    color: a.$white;
+
+    font-weight: 700;
+    font-size: 40px;
+  }
+}
+
+.footer_title {
+  padding-top: 3rem;
+}
+
+.footer_section-1 {
+  padding-bottom: 2.5rem;
+
+  & p {
+    font-family: a.$ff-secondary;
+    font-size: 18px;
+
+    line-height: 33px;
+    color: a.$white;
+
+    padding-bottom: 1.5rem;
+  }
+
+  & a {
+    color: #979797;
+    font-family: a.$ff-secondary;
+    font-size: 18px;
+
+    line-height: 33px;
+
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer_section-2 {
+  padding-bottom: 2.5rem;
+
+  & p {
+    font-family: a.$ff-secondary;
+    font-size: 18px;
+
+    line-height: 33px;
+    color: a.$white;
+
+    padding-bottom: 1.5rem;
+  }
+
+  & a {
+    color: #979797;
+    font-family: a.$ff-secondary;
+    font-size: 18px;
+
+    line-height: 33px;
+
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer_section-3 {
+  padding-bottom: 2.5rem;
+  & p {
+    font-family: a.$ff-secondary;
+    font-size: 18px;
+
+    line-height: 33px;
+    color: a.$white;
+
+    padding-bottom: 1.5rem;
+  }
+
+  & a {
+    color: #979797;
+    font-family: a.$ff-secondary;
+    font-size: 18px;
+
+    line-height: 33px;
+
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

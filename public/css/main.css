@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 375px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Overpass", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  padding: 2rem 1rem;
+  line-height: 32px;
+  color: hsl(208deg, 49%, 24%);
+}
+
+p {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: hsl(207deg, 13%, 34%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+header {
+  border-radius: 0 0 0 6rem;
+  background-image: linear-gradient(to bottom right, hsl(13deg, 100%, 72%) 20%, hsl(353deg, 100%, 62%) 100%);
+  width: 375px;
+  height: 600px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1.5rem 2rem;
+}
+.navbar-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar-nav {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 1.5rem;
+}
+.navbar-item {
+  list-style: none;
+}
+
+.header {
+  text-align: center;
+  vertical-align: middle;
+  width: 375px;
+  padding: 3rem 1rem;
+  z-index: 2;
+}
+
+.header h1 {
+  font-family: "Overpass", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 18px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.section-1 {
+  height: auto;
+  width: 375px;
+  padding: 5rem 1.5rem 15rem;
+  text-align: center;
+}
+.section-1 img {
+  width: 100%;
+  height: auto;
+}
+
+.section-2 {
+  position: relative;
+  width: 375px;
+  height: 625px;
+  background-color: hsl(208deg, 49%, 24%);
+  border-radius: 0 6rem 0 6rem;
+  z-index: -1;
+  margin: auto;
+}
+.section-2 h1 {
+  color: hsl(0deg, 0%, 100%);
+  padding-top: 12rem;
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  font-size: 40px;
+  line-height: 65px;
+}
+.section-2_circle {
+  position: absolute;
+  top: -43%;
+  width: 600px;
+  height: auto;
+  align-items: center;
+}
+.section-2 p {
+  text-align: center;
+  padding: 0 1.5rem;
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.section-3 {
+  text-align: center;
+  padding: 4rem 1.5rem 7rem;
+}
+.section-3 img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  height: auto;
+  width: 375;
+  background-color: hsl(240deg, 10%, 16%);
+  border-radius: 0 6rem 0 0;
+  text-align: center;
+}
+footer h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.footer_title {
+  padding-top: 3rem;
+}
+
+.footer_section-1 {
+  padding-bottom: 2.5rem;
+}
+.footer_section-1 p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+  color: hsl(0deg, 0%, 100%);
+  padding-bottom: 1.5rem;
+}
+.footer_section-1 a {
+  color: #979797;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+  display: flex;
+  flex-direction: column;
+}
+.footer_section-1 a:hover {
+  text-decoration: underline;
+}
+
+.footer_section-2 {
+  padding-bottom: 2.5rem;
+}
+.footer_section-2 p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+  color: hsl(0deg, 0%, 100%);
+  padding-bottom: 1.5rem;
+}
+.footer_section-2 a {
+  color: #979797;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+  display: flex;
+  flex-direction: column;
+}
+.footer_section-2 a:hover {
+  text-decoration: underline;
+}
+
+.footer_section-3 {
+  padding-bottom: 2.5rem;
+}
+.footer_section-3 p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+  color: hsl(0deg, 0%, 100%);
+  padding-bottom: 1.5rem;
+}
+.footer_section-3 a {
+  color: #979797;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+  display: flex;
+  flex-direction: column;
+}
+.footer_section-3 a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=main.css.map */
